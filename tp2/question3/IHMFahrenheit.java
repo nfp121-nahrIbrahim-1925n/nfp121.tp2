@@ -7,9 +7,9 @@ import java.awt.event.*;
 
 public class IHMFahrenheit extends JFrame implements ActionListener{
     private JTextField entree = new JTextField( 6 );
-    /** Le bouton de conversion. */
+   
     private JButton  boutonDeConversion = new JButton( "convertir" );
-    /** La sortie en degré Celsius. */
+  
     private JTextField sortie = new JTextField( 6 );
 
     public IHMFahrenheit(){
@@ -25,11 +25,7 @@ public class IHMFahrenheit extends JFrame implements ActionListener{
         boutonDeConversion.addActionListener( this );
     }
 
-    /** 
-     * méthode déclenchée lorsque le bouton de conversion est appuyé. 
-     * remarquer que le champs de droite (les degrés Celsius) n'est pas éditable.
-     * @param ae l'événement transmis
-     */
+ 
     public void actionPerformed( ActionEvent ae ){
         int fahrenheit = 0; 
         double celsius = 0.0; 
